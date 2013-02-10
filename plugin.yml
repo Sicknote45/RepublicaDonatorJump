@@ -1,0 +1,8 @@
+name: Clock Jump
+main: com.republicasmp.dev.pero_jump.jump
+version: 1.8
+author: Lord Perolan, RepublicaSMP Dev
+
+commands:
+ jumpthere:
+  description: Jumps to the target block. 
