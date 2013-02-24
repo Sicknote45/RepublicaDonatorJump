@@ -28,8 +28,7 @@ public class jump extends JavaPlugin implements Listener
 	      Player player = (Player) sender;
 	      Block block = player.getTargetBlock(null, 256);
 	      if ((block == null) || (block.getType() == Material.AIR)) return false; //Doesn't let you tp to air :P
-	      if ((block == null) || (block.getType() == Material.WATER)) return; //Ignores water
-    	      if ((block == null) || (block.getType() == Material.LAVA)) return; //Ignores Lava
+
 	      
 	      Location dest = block.getLocation();
 	      int y = dest.getBlockY();
@@ -95,8 +94,6 @@ public class jump extends JavaPlugin implements Listener
 
       Block block = player.getTargetBlock(null, 256);
       if ((block == null) || (block.getType() == Material.AIR)) return; //Doesn't let you tp to air :P
-      if ((block == null) || (block.getType() == Material.WATER)) return; //Ignores water
-      if ((block == null) || (block.getType() == Material.LAVA)) return; //Ignores Lava
 
       Location dest = block.getLocation();
       int y = dest.getBlockY();
@@ -131,8 +128,6 @@ public class jump extends JavaPlugin implements Listener
 
     	      Block block = player.getTargetBlock(null, 256);
     	      if ((block == null) || (block.getType() == Material.AIR)) return; //Doesn't let you tp to air :P
-    	      if ((block == null) || (block.getType() == Material.WATER)) return; //Ignores water
-    	      if ((block == null) || (block.getType() == Material.LAVA)) return; //Ignores Lava
     		
     	      Location dest = block.getLocation();
     	      int y = dest.getBlockY();
